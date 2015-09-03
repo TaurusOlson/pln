@@ -1,3 +1,11 @@
-# Pipeline
+# PLN
 
-pipeline is a library do data streaming in Python.
+`pln` is a Python library to apply successful operations on your data:
+
+
+```
+data = Pipeline("pipeline")                               # "pipeline"
+result = data >> select_consonants >> set >> join_chars   
+print result.value                                        # "pln"
+```
+
