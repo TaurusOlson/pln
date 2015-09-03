@@ -1,6 +1,6 @@
 # PLN
 
-`pln` is a Python library to apply successful operations on your data:
+`pln` is a Python library to apply successive operations on your data:
 
 
 ```
