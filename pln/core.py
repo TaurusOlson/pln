@@ -6,7 +6,7 @@ from functools import wraps, partial
 
 class Watch(object):
     """A watch just print the value passed to it then returns it
-    
+
     It's very handy when it is used in a pipeline.
 
     >>> p = Pipeline(2)
@@ -28,7 +28,7 @@ class Watch(object):
     def __call__(self, data):
         self.counter += 1
         self.data = data
-        print "Result %d: %r" % (self.counter, self.data) 
+        print "Result %d: %r" % (self.counter, self.data)
         return self.data
 
     def __str__(self):
@@ -39,7 +39,7 @@ class Watch(object):
 
 def shift(func, *args, **kwargs):
     """This function is basically a beefed up lambda x: func(x, *args, **kwargs)
-    
+
     `shift` comes in handy when it is used in a pipeline with a function that
     needs the passed value as its first argument.
 
