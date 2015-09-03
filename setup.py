@@ -1,5 +1,6 @@
 from codecs import open as codecs_open
-from setuptools import setup, find_packages
+from setuptools import setup
+import pln
 
 
 # Get the long description from the relevant file
@@ -8,15 +9,15 @@ with codecs_open('README.rst', encoding='utf-8') as f:
 
 
 setup(name='pln',
-      version='0.0.1',
-      description=u"A library to apply successive operations on your data.",
+      version=pln.__version__,
+      description='A library to apply successive operations on your data.',
       long_description=long_description,
       classifiers=[],
       keywords='',
-      author=u"Taurus Olson",
-      author_email='taurusolson@gmail.com',
+      author=pln.__author__,
+      author_email=pln.__email__,
       url='https://github.com/TaurusOlson/pln',
-      license='MIT',
+      license=pln.__version__,
       packages=['pln'],
       include_package_data=True,
       zip_safe=False
