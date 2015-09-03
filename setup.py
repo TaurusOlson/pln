@@ -17,7 +17,7 @@ setup(name='pln',
       author_email='taurusolson@gmail.com',
       url='https://github.com/TaurusOlson/pln',
       license='MIT',
-      # packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
+      packages=['pln'],
       include_package_data=True,
       zip_safe=False
       )
